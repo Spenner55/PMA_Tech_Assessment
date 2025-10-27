@@ -135,8 +135,23 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: 900, margin: "2rem auto", padding: "1rem", fontFamily: "system-ui" }}>
-      <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <h1>Weather Forecast</h1>
+      <header style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center"
+      }}>
+        <h1>PMA Weather App</h1>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <span style={{ fontStyle: "italic", fontSize: "0.9rem" }}>
+            Built by Dylan Windsor
+          </span>
+          <button
+            onClick={() => window.open("https://www.linkedin.com/school/pmaccelerator/", "_blank")}
+            style={{ padding: "6px 10px", cursor: "pointer" }}
+          >
+            PMA Info
+          </button>
+        </div>
       </header>
 
       <section style={{ display: "grid", gap: 12, gridTemplateColumns: "2fr 1fr 1fr auto" }}>
